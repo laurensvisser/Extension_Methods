@@ -6,7 +6,10 @@ namespace ConsExtensionMethods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string email = "extension.method@visualstudio.net";
+            Console.WriteLine($"{email} is emailadres: {email.IsValidEmailAddress()}");
+            Console.ReadKey();
         }
     }
 }
+
