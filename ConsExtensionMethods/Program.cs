@@ -1,4 +1,5 @@
 ﻿using System;
+using LibExtension;
 
 namespace ConsExtensionMethods
 {
@@ -6,10 +7,12 @@ namespace ConsExtensionMethods
     {
         static void Main(string[] args)
         {
-            string email = "extension.method@visualstudio.net";
-            Console.WriteLine($"{email} is emailadres: {email.IsValidEmailAddress()}");
+            string[] animals = { "monkey", "bear", "rabbit", "wolf" };
+            if ("bear".In(animals))
+                Console.WriteLine($"Found the animal!");
+            else
+                Console.WriteLine("No such animal.");
             Console.ReadKey();
         }
     }
 }
-
