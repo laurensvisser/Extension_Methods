@@ -4,9 +4,9 @@ namespace LibExtension
 {
     public static class MyLibExtensions
     {
-        public static bool In(this object o, IEnumerable c)
+        public static bool In<T>(this T o, IEnumerable c)
         {
-            foreach (object i in c)
+            foreach (T i in c)
             {
                 if (i.Equals(o))
                     return true;

@@ -7,8 +7,8 @@ namespace ConsExtensionMethods
     {
         static void Main(string[] args)
         {
-            string[] animals = { "monkey", "bear", "rabbit", "wolf" };
-            if ("bear".In(animals))
+            string[] animals = { "1","3","5" };
+            if ("5".In(animals))
                 Console.WriteLine($"Found the animal!");
             else
                 Console.WriteLine("No such animal.");
